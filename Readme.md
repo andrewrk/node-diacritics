@@ -13,11 +13,11 @@
 
 ## API
 
-    ```js
-    var removeDiacritics = require('diacritics').remove;
-    console.log(removeDiacritics("Iлｔèｒｎåｔïｏｎɑｌíƶａｔï߀ԉ"));
-    // prints "Internationalization"
-    ```
+```js
+var removeDiacritics = require('diacritics').remove;
+console.log(removeDiacritics("Iлｔèｒｎåｔïｏｎɑｌíƶａｔï߀ԉ"));
+// prints "Internationalization"
+```
 
 ## License
 
