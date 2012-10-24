@@ -1,0 +1,19 @@
+{
+  "name": "diacritics",
+  "version": "0.0.1",
+  "description": "remove diacritics from strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "diacritics",
+    "remove",
+    "removal",
+    "search",
+    "string"
+  ],
+  "author": "Andrew Kelley",
+  "license": "MIT"
+}

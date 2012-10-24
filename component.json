@@ -1,0 +1,18 @@
+{
+  "name": "diacritics",
+  "repo": "superjoe30/diacritics",
+  "description": "remove diacritics from strings",
+  "version": "0.0.1",
+  "keywords": [
+    "diacritics",
+    "remove",
+    "removal",
+    "search",
+    "string"
+  ],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}
