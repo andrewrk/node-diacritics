@@ -16,7 +16,7 @@
 ```js
 var removeDiacritics = require('diacritics').remove;
 console.log(removeDiacritics("Iлｔèｒｎåｔïｏｎɑｌíƶａｔï߀ԉ"));
-// prints "Internationalization"
+// prints "iлternationalizati߀ԉ"
 ```
 
 ## License
