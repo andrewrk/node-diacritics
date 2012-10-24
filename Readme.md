@@ -3,6 +3,8 @@
 
   remove diacritics from strings
 
+  useful when implementing some kind of search or filter functionality.
+
 ## Node.js Installation
 
     $ npm install diacritics
