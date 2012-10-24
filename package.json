@@ -1,6 +1,6 @@
 {
   "name": "diacritics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "remove diacritics from strings",
   "main": "index.js",
   "scripts": {
