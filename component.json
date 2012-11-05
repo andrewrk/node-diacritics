@@ -2,7 +2,7 @@
   "name": "diacritics",
   "repo": "superjoe30/diacritics",
   "description": "remove diacritics from strings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "diacritics",
     "remove",
