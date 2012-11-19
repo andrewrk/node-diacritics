@@ -126,7 +126,7 @@ var DIACRITICS_REMOVAL_MAP = [
 ], MAP_LENGTH = DIACRITICS_REMOVAL_MAP.length;
 
 exports.remove = function (str){
-  var i, removal, regex, base;
+  var i, removal;
   for (i = 0; i < MAP_LENGTH; ++i) {
     removal = DIACRITICS_REMOVAL_MAP[i];
     str = str.replace(removal.regex, removal.base);
