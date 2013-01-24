@@ -6,3 +6,4 @@ assert.strictEqual(removeDiacritics("Båｃòл íｐѕùｍ ԁｏɭ߀ｒ ѕï�
 assert.strictEqual(removeDiacritics("ᴎᴑᴅᴇȷʂ"), "nodejs");
 
 assert.strictEqual(removeDiacritics("hambúrguer"), "hamburguer");
+assert.strictEqual(removeDiacritics("hŒllœ"), "hoelloe");
