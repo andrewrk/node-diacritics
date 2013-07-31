@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node test/test.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superjoe30/diacritics.git"
+  },
   "keywords": [
     "diacritics",
     "remove",
