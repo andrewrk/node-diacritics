@@ -114,6 +114,9 @@ var DIACRITICS_REMOVAL_MAP = [
     base: 'T',
     regex: /[\x54\u24C9\uFF34\u1E6A\u0164\u1E6C\u021A\u0162\u1E70\u1E6E\u0166\u01AC\u01AE\u023E\uA786]/g
   }, {
+    base: 'Th',
+    regex: /[\u00DE]/g
+  }, {
     base: 'TZ',
     regex: /[\uA728]/g
   }, {
@@ -242,6 +245,9 @@ var DIACRITICS_REMOVAL_MAP = [
   }, {
     base: 't',
     regex: /[\x74\u24E3\uFF54\u1E6B\u1E97\u0165\u1E6D\u021B\u0163\u1E71\u1E6F\u0167\u01AD\u0288\u2C66\uA787]/g
+  }, {
+    base: 'th',
+    regex: /[\u00FE]/g
   }, {
     base: 'tz',
     regex: /[\uA729]/g
