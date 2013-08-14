@@ -2,7 +2,7 @@
   "name": "diacritics",
   "repo": "superjoe30/diacritics",
   "description": "remove diacritics from strings ('ascii folding')",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "keywords": [
     "diacritics",
     "remove",
