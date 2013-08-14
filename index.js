@@ -33,6 +33,9 @@ var DIACRITICS_REMOVAL_MAP = [
     base: 'D',
     regex: /[\u0044\u24B9\uFF24\u1E0A\u010E\u1E0C\u1E10\u1E12\u1E0E\u0110\u018A\u0189\u1D05\uA779]/g
   }, {
+    base: 'Dh',
+    regex: /[\u00D0]/g
+  }, {
     base: 'DZ',
     regex: /[\u01F1\u01C4]/g
   }, {
@@ -164,6 +167,9 @@ var DIACRITICS_REMOVAL_MAP = [
   }, {
     base: 'd',
     regex: /[\u0064\u24D3\uFF44\u1E0B\u010F\u1E0D\u1E11\u1E13\u1E0F\u0111\u018C\u0256\u0257\u018B\u13E7\u0501\uA7AA]/g
+  }, {
+    base: 'dh',
+    regex: /[\u00F0]/g
   }, {
     base: 'dz',
     regex: /[\u01F3\u01C6]/g
