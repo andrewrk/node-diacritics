@@ -9,3 +9,4 @@ assert.strictEqual(removeDiacritics("ᴎᴑᴅᴇȷʂ"), "NoDEJs");
 
 assert.strictEqual(removeDiacritics("hambúrguer"), "hamburguer");
 assert.strictEqual(removeDiacritics("hŒllœ"), "hOElloe");
+assert.strictEqual(removeDiacritics("Fußball"), "Fussball");
