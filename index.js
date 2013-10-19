@@ -183,6 +183,21 @@ var DIACRITICS_REMOVAL_MAP = [
     base: 'f',
     regex: /[\u0066\u24D5\uFF46\u1E1F\u0192]/g
   }, {
+    base: 'ff',
+    regex: /[\uFB00]/g
+  }, {
+    base: 'fi',
+    regex: /[\uFB01]/g
+  }, {
+    base: 'fl',
+    regex: /[\uFB02]/g
+  }, {
+    base: 'ffi',
+    regex: /[\uFB03]/g
+  }, {
+    base: 'ffl',
+    regex: /[\uFB04]/g
+  }, {
     base: 'g',
     regex: /[\u0067\u24D6\uFF47\u01F5\u011D\u1E21\u011F\u0121\u01E7\u0123\u01E5\u0260\uA7A1\uA77F\u1D79]/g
   }, {
