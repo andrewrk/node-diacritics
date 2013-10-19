@@ -278,10 +278,16 @@ var DIACRITICS_REMOVAL_MAP = [
   }
 ], MAP_LENGTH = DIACRITICS_REMOVAL_MAP.length;
 
+var ALL_ASCII_REGEX = /^[\x00-\x7f]*$/;
+
 exports.remove = function (str) {
-  var i, removal;
-  for (i = 0; i < MAP_LENGTH; ++i) {
-    removal = DIACRITICS_REMOVAL_MAP[i];
+  if (ALL_ASCII_REGEX.test(str)) {
+    // this code path is roughly 15x faster (at the time of writing),
+    // and it is the common case.
+    return str;
+  }
+  for (var i = 0; i < MAP_LENGTH; ++i) {
+    var removal = DIACRITICS_REMOVAL_MAP[i];
     str = str.replace(removal.regex, removal.base);
   }
   return str;
