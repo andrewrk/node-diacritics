@@ -1,5 +1,8 @@
 var DIACRITICS_REMOVAL_MAP = [
   {
+    base: ' ',
+    regex: /[\u00A0]/g
+  }, {
     base: '0',
     regex: /[\u07C0]/g
   }, {
