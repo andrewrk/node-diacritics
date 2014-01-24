@@ -11,7 +11,7 @@
 
 ## Component Installation
 
-    $ component install superjoe30/diacritics
+    $ component install andrewrk/diacritics
 
 ## API
 
