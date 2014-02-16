@@ -309,4 +309,4 @@ exports.remove = function (str) {
     str = str.replace(removal.regex, removal.base);
   }
   return str;
-}
+};
