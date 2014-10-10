@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrewrk/diacritics.git"
+    "url": "https://github.com/andrewrk/node-diacritics.git"
   },
   "keywords": [
     "diacritics",
@@ -18,5 +18,11 @@
     "string"
   ],
   "author": "Andrew Kelley",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewrk/node-diacritics/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
