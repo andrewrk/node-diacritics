@@ -307,6 +307,8 @@ for (var i = 0; i < replacementList.length; i += 1) {
 }
 
 function removeDiacritics(str) {
+  if (str == null)
+    return str; 
   return str.replace(/[^\u0000-\u007e]/g, function(c) {
     return diacriticsMap[c] || c;
   });
