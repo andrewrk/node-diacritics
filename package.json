@@ -17,6 +17,9 @@
     "search",
     "string"
   ],
+  "bin": {
+    "diacritics": "bin/diacritics"
+  },
   "author": "Andrew Kelley",
   "license": "MIT",
   "bugs": {

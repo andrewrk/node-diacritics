@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var remove = require('../index.js').remove
+
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('readable', function() {
+  var chunk = process.stdin.read();
+    if (chunk !== null) {
+      process.stdout.write(remove(chunk));
+    }
+});
