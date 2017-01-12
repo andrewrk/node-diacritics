@@ -311,3 +311,6 @@ function removeDiacritics(str) {
     return diacriticsMap[c] || c;
   });
 }
+
+exports.replacementList = replacementList;
+exports.diacriticsMap = diacriticsMap;
