@@ -298,19 +298,19 @@ var replacementList = [
   }
 ];
 
-var diacriticsMap = {};
-for (var i = 0; i < replacementList.length; i += 1) {
-  var chars = replacementList[i].chars;
-  for (var j = 0; j < chars.length; j += 1) {
-    diacriticsMap[chars[j]] = replacementList[i].base;
+var diacriticsMap = {}, i = replacementList.length, j, chars, base;
+while (i--) {
+  chars = replacementList[i].chars;
+  base = replacementList[i].base;
+  j = chars.length;
+  while(j--) {
+    diacriticsMap[chars[j]] = base;
   }
 }
 
-function removeDiacritics(str) {
-  return str.replace(/[^\u0000-\u007e]/g, function(c) {
-    return diacriticsMap[c] || c;
-  });
-}
+var RE_DIACRITICS = /[^\u0000-\u007e]/g;
+function replacer(c) { return diacriticsMap[c] || c };
+function removeDiacritics(str) { return str.replace(RE_DIACRITICS, replacer); };
 
 exports.replacementList = replacementList;
 exports.diacriticsMap = diacriticsMap;
