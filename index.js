@@ -312,5 +312,40 @@ function removeDiacritics(str) {
   });
 }
 
+
+// Provide the same as removeDiacritics but also return a mapping between the new and original indexes.
+// This is necessary because indexes are shifted e.g. 'ß' => 'ss'.
+function removeDiacriticsWithBacktrace(str) {
+  // Characters like ß are very rare, so we give only 1 extra slot. If more is needed,
+  // then the array will be reallocated. We also need 1 extra slot to store the end-of-word index.
+  var indexMap = Array(str.length + 2);
+  var inputPos = 0;
+  var outputPos = 0;
+  var normalizedText = str.replace(/[^\u0000-\u007e]/g, function(c, currentIndex) {
+    for (; inputPos < currentIndex; inputPos++, outputPos++) {
+      indexMap[outputPos] = inputPos;
+    }
+    var char = diacriticsMap[c] || c;
+    var lastOutputPos = outputPos + char.length;
+    for (; outputPos < lastOutputPos; outputPos++) {
+      indexMap[outputPos] = inputPos;
+    }
+    inputPos++
+    return char;
+  });
+  var strLen = str.length;
+  for (; inputPos <= strLen; inputPos++, outputPos++) {
+    indexMap[outputPos] = inputPos;
+  }
+  return {
+    normalizedText: normalizedText,
+    indexMap: indexMap
+  }
+}
+
+
+
+
 exports.replacementList = replacementList;
 exports.diacriticsMap = diacriticsMap;
+exports.removeWithBackTrace = removeDiacriticsWithBacktrace;
