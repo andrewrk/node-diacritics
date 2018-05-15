@@ -12,8 +12,17 @@ $ npm install diacritics
 
 ## API
 
+### JavaScript
 ```js
 var removeDiacritics = require('diacritics').remove;
 console.log(removeDiacritics("Iлｔèｒｎåｔïｏｎɑｌíƶａｔï߀ԉ"));
+// prints "Internationalizati0n"
+```
+
+### TypeScript
+```ts
+import * as diacritics from 'diacritics';
+
+console.log(diacritics.remove("Iлｔèｒｎåｔïｏｎɑｌíƶａｔï߀ԉ"));
 // prints "Internationalizati0n"
 ```

@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "description": "remove diacritics from strings",
   "main": "index.js",
+  "typings": "diacritics.d.ts",
   "scripts": {
     "test": "node test/test.js"
   },
