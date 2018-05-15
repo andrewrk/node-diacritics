@@ -1,4 +1,4 @@
-declare module 'diatrics' {
+declare module 'diacritics' {
   interface ReplacementListEntry {
     base: string
     chars: string
