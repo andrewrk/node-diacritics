@@ -231,7 +231,7 @@ var replacementList = [
     chars: "\u24DC\uFF4D\u1E3F\u1E41\u1E43\u0271\u026F",
   }, {
     base: 'n',
-    chars: "\u24DD\uFF4E\u01F9\u0144\xF1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5\u043B\u0509",
+    chars: "\u24DD\uFF4E\u01F9\u0144\xF1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5\u0509",
   }, {
     base: 'nj',
     chars: "\u01CC",
