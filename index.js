@@ -1,5 +1,3 @@
-exports.remove = removeDiacritics;
-
 var replacementList = [
   {
     base: ' ',
@@ -312,5 +310,9 @@ function removeDiacritics(str) {
   });
 }
 
-exports.replacementList = replacementList;
-exports.diacriticsMap = diacriticsMap;
+// Uses NodeJS exports only if available (handles browser compatibility)
+if('object' === typeof exports && 'undefined' != typeof module) {
+  exports.remove = removeDiacritics;
+  exports.replacementList = replacementList;
+  exports.diacriticsMap = diacriticsMap;
+}
