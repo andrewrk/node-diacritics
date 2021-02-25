@@ -2,8 +2,14 @@ exports.remove = removeDiacritics;
 
 var replacementList = [
   {
+    base: '',
+    chars: "\u200B",
+  }, {
     base: ' ',
     chars: "\u00A0",
+  }, { 
+    base: '"',
+    chars: "\u201C\u201D\uFF02",
   }, {
     base: '0',
     chars: "\u07C0",
