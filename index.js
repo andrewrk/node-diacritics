@@ -8,8 +8,8 @@ var replacementList = [
     base: ' ',
     chars: "\u00A0",
   }, {
-	base: "'",
-	chars: "\u2019\u2018",
+    base: "'",
+    chars: "\u2019\u2018",
   }, { 
     base: '"',
     chars: "\u201C\u201D\uFF02",
