@@ -295,6 +295,48 @@ var replacementList = [
   }, {
     base: 'z',
     chars: "\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763",
+  }, {
+    base: 'α',
+    chars: '\u03AC'
+  }, {
+    base: 'ε',
+    chars: '\u03AD'
+  }, {
+    base: 'η',
+    chars: '\u03AE'
+  }, {
+    base: 'ι',
+    chars: '\u03AF\u03CA\u0390'
+  }, {
+    base: 'ο',
+    chars: '\u03CC'
+  }, {
+    base: 'υ',
+    chars: '\u03CD\u03CB\u03B0'
+  }, {
+    base: 'ω',
+    chars: '\u03CE'
+  }, {
+    base: 'Α',
+    chars: '\u0386'
+  }, {
+    base: 'Ε',
+    chars: '\u0388'
+  }, {
+    base: 'Η',
+    chars: '\u0389'
+  }, {
+    base: 'Ι',
+    chars: '\u038A\u03AA\u0399'
+  }, {
+    base: 'Ο',
+    chars: '\u038C'
+  }, {
+    base: 'Υ',
+    chars: '\u038E\u03AB\u03A5'
+  }, {
+    base: 'Ω',
+    chars: '\u038F'
   }
 ];
 
